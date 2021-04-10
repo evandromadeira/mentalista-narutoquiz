@@ -1,0 +1,134 @@
+* {
+    /* Evita que o padding empurre as bordas para fora */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/10/78/2b/10782b74c6e25d2fa6f17cccb7c33c64.jpg");
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+}
+
+.forward {
+  height: auto;
+  top: 10px;
+  width: 60%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 30%);
+  border-radius: 10px;
+  padding: 5px;
+  position: fixed;
+}
+
+.forward * {
+  color: white;
+  font-size: 16px;
+}
+
+.container {
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.page-title {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.containerQuiz {
+  width: 600px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+h2 {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.selected-button {
+  color: white;
+  background-color: blue;
+}
+
+.correct-button {
+  color: black;
+  background-color: green;
+}
+
+.wrong-button {
+  color: black;
+  background-color: red;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+  margin: 0 0 10px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  color: white;
+  font-size: 12px;
+  font-family: Arial, sans-serif;;
+  padding: 3px;
+  position: fixed;
+  text-align: center;
+}
